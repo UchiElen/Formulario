@@ -1,0 +1,36 @@
+<html>
+	<meta charset="UTF-8"/>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="index.js" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="div-parent"> 
+    <form action="return enviarForm()" class="form">
+        <h1 class="h1">Create Account</h1>
+
+        <div class="input-label">Nombre </div>
+        <input type="text" name="nombre" value="" id="nombre-id" required/>
+        <div class="error-label" id="nombre-error-id">Rellene este campo</div>
+
+        <div class="input-label">Email: </div>
+        <input type="email" name="email" value="" id="email-id" required/>
+        <div class="error-label" id="email-error-id">Rellene este campo</div>
+
+        <div class="input-label">Clave </div>
+        <input type="password" name="password" value="" minlength="8" id="password-id" required/>
+        <div class="error-label" id="password-error-id">Rellene este campo</div>
+
+        <div class="input-label">Confirme su clave </div>
+        <input type="password" name="passwordConfirm" value="" minlength="8" id="passwordConfirm-id" required/>
+        <div class="error-label" id="passwordConfirm-error-id">Rellene este campo</div>
+
+        <input  value="ENVIAR" class="enviar-button" onclick="enviarForm()"/>
+        <br />
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
